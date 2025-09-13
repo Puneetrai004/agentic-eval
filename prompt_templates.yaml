@@ -1,0 +1,8 @@
+llm_judge_prompt: |
+  You are an impartial evaluator. Given the following task prompt and a response, score the response on 0-5 for each dimension:
+  1. Instruction-following (did the response follow the instructions exactly?)
+  2. Hallucination-risk (0 means factual & safe, 5 means high chance of hallucination)
+  3. Assumption-control (0 good, 5 poor — made many unwarranted assumptions)
+  4. Coherence_accuracy (0 poor, 5 excellent)
+  Provide a JSON object only like:
+  {"instruction_following": 4, "hallucination": 1, "assumption_control": 2, "coherence_accuracy": 4}
