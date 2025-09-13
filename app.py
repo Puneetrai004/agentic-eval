@@ -11,6 +11,9 @@ import matplotlib.pyplot as plt
 import yaml
 import requests
 
+# Force Streamlit to use local .streamlit directory
+os.environ["STREAMLIT_CONFIG_DIR"] = os.path.join(os.getcwd(), ".streamlit")
+
 # CACHING
 @st.cache_data
 def load_prompt_templates(path="prompt_templates.yaml"):
