@@ -1,7 +1,7 @@
 streamlit
-pandas>=1.5
-numpy>=1.21
-scikit-learn>=1.0
-matplotlib>=3.5
-pyyaml>=6.0
+pandas
+numpy
+scikit-learn
+matplotlib
+pyyaml
 requests>=2.28
